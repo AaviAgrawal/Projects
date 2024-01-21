@@ -31,9 +31,8 @@ body {
 .loader:nth-child(3) {
   display: flex;
   align-items: center;
-  width: 86vw;
+  width: 80vw;
   justify-content: space-between;
-  height: 20vh;
 }
 
 #loading {
@@ -46,27 +45,28 @@ body {
 
 .loader {
   overflow: hidden;
+  height: 8vw;
 }
 
 #loading h4 {
   font-weight: 100;
-  font-size: 8vh;
+  font-size: 4vw;
 }
 
 #loading h5 {
   font-weight: 100;
-  font-size: 8vh;
+  font-size: 4vw;
 }
 
 .loader h1 {
   font-family: 'plain light';
   font-weight: 100;
-  font-size: 16vh;
+  font-size: 7vw;
 }
 .loader h2{
   font-family: 'plain light';
   font-weight: 100; 
-  font-size: 16vh;
+  font-size: 7vw;
   animation-name: now;
   animation-duration: 1s;
   animation-timing-function: linear;
