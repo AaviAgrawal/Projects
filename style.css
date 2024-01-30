@@ -9,8 +9,19 @@ html,
 body {
   height: 100%;
   width: 100%;
+  cursor: none
 }
 
+#main{
+  background-color: #151515;
+}
+.mousefollower{
+  height: 40px;
+  width: 40px;
+  border: 1px solid white;
+  mix-blend-mode: normal;
+  background-color: transparent !important;
+}
 #loadpage {
   height: 100vh;
   width: 100%;
@@ -19,6 +30,8 @@ body {
   padding-left: 6vw;
   color: #FFFFFF;
   position: absolute;
+
+  /* display: none; */
 }
 
 .loader:nth-child(1) {
@@ -112,8 +125,55 @@ body {
 }
 
 #page1 {
+  font-family: 'plain light';
   height: 100vh;
   width: 100%;
-  background-color: #151515;
   position: relative;
+  color: white;
+}
+
+#nav{
+  padding: 3vw 5vw;
+  display: flex;
+  justify-content: space-between;
+}
+#nav #nav-one{
+  width: 25vw;
+  display: flex;
+  justify-content: space-between;
+}
+#nav-one1 h2{
+  font-size: 1vw;
+  font-weight: 100;
+}
+#nav-two{
+  display: flex;
+  gap: 2vw;
+}
+#nav-two h4{
+  font-size: 1vw;
+  font-weight: 100;
+}
+#content{
+  display: flex;
+  align-items: flex-start;
+  gap: 5vw;
+  padding-top: 5vw;
+  padding-left: 18vw;
+  line-height: 7vw;
+}
+#content h2{
+  font-family: 'silk serif';
+  font-size: 3vw;
+}
+.text{
+  overflow: hidden;
+}
+#content .text h1{
+  font-size: 8vw;
+  font-weight: 500;
+}
+#page2{
+  height: 100vh;
+  width: 100%;
 }
