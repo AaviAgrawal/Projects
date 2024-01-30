@@ -29,7 +29,8 @@ body {
   padding-top: 15vh;
   padding-left: 6vw;
   color: #FFFFFF;
-  position: absolute;
+  position: fixed;
+  z-index: 9999;
 
   /* display: none; */
 }
@@ -176,4 +177,42 @@ body {
 #page2{
   height: 100vh;
   width: 100%;
+}
+#page2 #video-container{
+  height: 35vw;
+  width: 70vw;
+  margin-top: 9vw;
+  margin-left: 30vw;
+  position: relative;
+  /* background-color: white; */
+}
+#video-container img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+#video-container video{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  left: 0%;
+  opacity: 0;
+}
+#play-btn{
+  position: absolute;
+  height: 10vw;
+  width: 10vw;
+  border-radius: 50%;
+  background-color: #FFA63D;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 68%;
+  top: -7%;
+  z-index: 99999;
+}
+#play-btn i{
+  color: white;
+  font-size: 3vw;
 }
